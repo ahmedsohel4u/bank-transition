@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple bank transition website</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="w-3/4 m-auto">
+        <h2 class="font-semibold bg-gray-200 text-4xl text-center my-8 p-4">Welcome Back, <span class="text-blue-800 font-bold">MR. XYZ</span></h2>
+        <div class="container grid grid-cols-3 gap-4">
+            <div class="bg-green-300 p-8 rounded">
+                <h2 class="font-semibold text-2xl">Deposit</h2>
+                <h2 class="font-semibold text-4xl">$<span id="deposit-amount">00</span></h2>
+            </div>
+            <div class="bg-blue-300 p-8 rounded">
+                <h2 class="font-semibold text-2xl">Withdraw</h2>
+                <h2 class="font-semibold text-4xl">-$<span id="withdraw-amount">00</span></h2>
+            </div>
+            <div class="bg-yellow-300 p-8 rounded">
+                <h2 class="font-semibold text-2xl">Blance</h2>
+                <h2 class="font-semibold text-4xl">$<span id="balance-amount">1485</span></h2>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8 rounded">
+            <div class="bg-gray-200 p-8">
+                <h2 class="text-2xl font-semibold mb-3">Deposit Amount</h2>
+                <form action="#" method="post" id="deposit-form">
+                    <input class="border w-5/6 p-2 mb-3" type="text" id="deposit-input" placeholder="Enter your $ here to deposit">
+                    <input class="block text-center border px-8 py-2 bg-green-700 text-white font-semibold cursor-pointer" type="submit" value="Deposit">
+                </form>
+            </div>
+            <div class="bg-gray-200 p-8 rounded">
+                <h2 class="text-2xl font-semibold mb-3">Withdraw Amount</h2>
+                <form action="#" method="post" id="withdraw-form">
+                    <input class="border w-5/6 p-2 mb-3" type="text" id="withdraw-input" placeholder="Enter your $ here to withdraw">
+                    <input class="block text-center border px-8 py-2 bg-green-700 text-white font-semibold cursor-pointer" type="submit" value="Withdraw">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/banking.js"></script>
+</body>
+</html>
